@@ -47,7 +47,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// Scroll suave até o topo
 btnTopo.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
