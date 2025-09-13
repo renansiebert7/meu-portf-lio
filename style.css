@@ -16,13 +16,13 @@ body, header {
 
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* ou 700 para títulos mais fortes */
+    font-weight: 600; 
     color: #FFD166;
 }
 
 .topo {
     position: fixed;
-    width: 80px;
+    width: 100px;
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
@@ -30,12 +30,12 @@ h3 {
 
 .titulo, h2, .titulo3 {
     font-family: 'Merriweather', serif;;
-    font-weight: 600; /* ou 700 para títulos mais fortes */
+    font-weight: 600; 
     color:#ffc400;
 }
 
 h1, .titulo2 {
-    font-family: 'Merriweather', serif; /* Subtítulos ou frases de destaque */
+    font-family: 'Merriweather', serif; 
     font-weight: 700;
     color: #F1FAEE;
 }
