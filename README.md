@@ -24,7 +24,7 @@ CSS3 <br>
 JavaScript <br>
 
 🌐 Acesse o portfólio online <br>
-<a href="renansiebert7.github.io/meu-portf-lio">👉 Clique aqui para visualizar</a>
+<a href="https://renansiebert7.github.io/meu-portf-lio/">👉 Clique aqui para visualizar</a>
 
 ⚡ Esse portfólio está em constante atualização, acompanhando minha evolução como futuro Desenvolvedor Front-End.
 
