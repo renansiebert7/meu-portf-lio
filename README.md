@@ -16,6 +16,7 @@ O portfólio organiza os principais projetos que desenvolvi até aqui, mostrando
 🔹 Jokenpô – Jogo interativo de pedra, papel e tesoura. <br>
 🔹 Fenerbahtchê – Site oficial do time de futsal, com jogadores, comissão e camisa da torcida. <br>
 🔹 Projeto Mario – Página fictícia com o personagem Mario oferecendo seus serviços como encanador. <br>
+🔹 Landing Page – Landing Page fictícia de um celular "iOne X". <br>
 
 🛠️ Tecnologias utilizadas
 
