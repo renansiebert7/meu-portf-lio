@@ -9,14 +9,15 @@ O portfólio organiza os principais projetos que desenvolvi até aqui, mostrando
 
 📌 Projetos em destaque:
 
+🔹 Fenerbahtchê – Site oficial do time de futsal, com jogadores, comissão e camisa da torcida. <br>
+🔹 Landing Page – Landing Page fictícia de um celular "iOne X". <br>
+🔹 To Do List Futurista - Adicionar tarrefa, limpar, Marcar como concluído e remover concluídas <br>
 🔹 Mini Calculadora – Operações básicas de soma, subtração, multiplicação e divisão. <br>
 🔹 Sorteador de Números – Geração aleatória de números para sorteios. <br>
 🔹 Conversor de Moedas – Conversão simples entre diferentes moedas. <br>
 🔹 Cronômetro – Iniciar, pausar e zerar contagem de tempo. <br>
 🔹 Jokenpô – Jogo interativo de pedra, papel e tesoura. <br>
-🔹 Fenerbahtchê – Site oficial do time de futsal, com jogadores, comissão e camisa da torcida. <br>
 🔹 Projeto Mario – Página fictícia com o personagem Mario oferecendo seus serviços como encanador. <br>
-🔹 Landing Page – Landing Page fictícia de um celular "iOne X". <br>
 
 🛠️ Tecnologias utilizadas
 
@@ -30,4 +31,4 @@ JavaScript <br>
 ⚡ Esse portfólio está em constante atualização, acompanhando minha evolução como futuro Desenvolvedor Front-End.
 
 
-<img src="https://github.com/renansiebert7/meu-portf-lio/blob/master/assets/read.me%20git.png?raw=true">
+<img src="https://github.com/renansiebert7/meu-portf-lio/blob/master/assets/DESIGN%20READ.ME%20GIT%20HUB%20portf%C3%B3lio.png?raw=true">
