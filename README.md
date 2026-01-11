@@ -1,32 +1,51 @@
-📂 Portfólio – Renan Carlo Siebert
+# 📂 Portfólio – Renan Carlo Siebert
 
-Bem-vindo(a) ao meu portfólio! 🚀
-Este projeto foi desenvolvido para reunir e apresentar meus trabalhos práticos na área de Desenvolvimento Web, aplicando HTML, CSS e JavaScript.
+## 🚀 Sobre o Projeto
+Bem-vindo(a) ao meu portfólio! Este espaço foi criado para consolidar meus estudos e exibir projetos práticos desenvolvidos na área de **Desenvolvimento Web**. Aqui, aplico conceitos de semântica, estilização avançada e lógica de programação.
 
-👨🏻‍💻 Sobre o projeto
+---
 
-O portfólio organiza os principais projetos que desenvolvi até aqui, mostrando minha evolução, criatividade e aplicação das tecnologias estudadas.
+## 🛠️ Tecnologias Utilizadas
+Abaixo, as principais ferramentas que domino e utilizo nos meus projetos:
 
-📌 Projetos em destaque:
+<div align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+</div>
 
-🔹 Fenerbahtchê – Site oficial do time de futsal, com jogadores, comissão e camisa da torcida. <br>
-🔹 Landing Page – Landing Page fictícia de um celular "iOne X". <br>
-🔹 To Do List Futurista - Adicionar tarrefa, limpar, Marcar como concluído e remover concluídas <br>
-🔹 Mini Calculadora – Operações básicas de soma, subtração, multiplicação e divisão. <br>
-🔹 Sorteador de Números – Geração aleatória de números para sorteios. <br>
-🔹 Conversor de Moedas – Conversão simples entre diferentes moedas. <br>
-🔹 Cronômetro – Iniciar, pausar e zerar contagem de tempo. <br>
-🔹 Jokenpô – Jogo interativo de pedra, papel e tesoura. <br>
-🔹 Projeto Mario – Página fictícia com o personagem Mario oferecendo seus serviços como encanador. <br>
+---
 
-🛠️ Tecnologias utilizadas
+## 📌 Projetos em Destaque
 
-HTML5 <br>
-CSS3 <br>
-JavaScript <br>
+| Projeto | Descrição | Status |
+| :--- | :--- | :---: |
+| ⚽ **Fenerbahtchê** | Site oficial de time de futsal com listagem de equipe. | ✅ Finalizado |
+| 📱 **Landing Page iOne X** | Página de vendas de smartphone com foco em conversão. | ✅ Finalizado |
+| ✅ **To Do List Futurista** | Gerenciador de tarefas com manipulação de DOM. | ✅ Finalizado |
+| 🔢 **Sorteador & Calculadora** | Ferramentas de utilidade com lógica matemática. | ✅ Finalizado |
+| 🎮 **Jokenpô & Mario** | Projetos interativos e lúdicos com temas de games. | ✅ Finalizado |
+| 💰 **Conversor & Cronômetro**| Aplicações práticas para o dia a dia. | ✅ Finalizado |
 
-🌐 Acesse o portfólio online <br>
-<a href="https://renansiebert7.github.io/meu-portf-lio/">👉 Clique aqui para visualizar</a>
+---
+
+## 🌐 Demonstração Online
+O portfólio está publicado e pode ser acessado em tempo real:
+
+> [**👉 Clique aqui para visualizar o portfólio completo**](https://renansiebert7.github.io/meu-portf-lio/)
+
+---
+
+## 📫 Vamos conversar?
+Estou sempre em busca de novos desafios e conexões na área de tecnologia.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/renansiebert/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/renansiebert7)
+
+---
+<p align="center">
+  ⚡ <i>"Em constante evolução, uma linha de código por vez."</i>
+</p>
 
 ⚡ Esse portfólio está em constante atualização, acompanhando minha evolução como futuro Desenvolvedor Front-End.
 
