@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -133,7 +134,8 @@ a,
 .projeto5,
 .projeto6,
 .projeto7,
-.projeto8 {
+.projeto8,
+.projeto9 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,17 +178,18 @@ a,
 .projeto5,
 .projeto6,
 .projeto7,
-.projeto8 {
+.projeto8,
+.projeto9 {
     padding-left: 17%;
     padding-right: 17%;
     text-align: center;
 }
 
-.projeto8 ul, .projeto7 ul {
+.projeto8, .projeto9, .projeto7 ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
+    text-align: center;
 }
 
 ul {
@@ -461,5 +464,753 @@ a:active {
 
     .certificados img {
         width: 240px;
+    }
+} 
+
+/* 
+
+/* ===============================
+   RESET + CONFIGURAÇÕES GLOBAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+:root {
+    --neon: #00f5ff;
+    --glass: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.6);
+    --text-main: #E0E0E0;
+    --title-main: #F1FAEE;
+    --highlight: #ffc400;
+}
+
+/* ===============================
+   BASE
+================================ */
+
+body,
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-main);
+    letter-spacing: 0.3px;
+}
+
+h1,
+.titulo2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: var(--title-main);
+}
+
+.titulo,
+h2,
+.titulo3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: var(--highlight);
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFD166;
+}
+
+p,
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Merriweather', serif;
+    color: #3573c9;
+    position: relative;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: var(--neon);
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* ===============================
+   BACKGROUND
+================================ */
+
+.img-fundo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    object-fit: cover;
+}
+
+.mascara {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 140%;
+    background: linear-gradient(109deg,
+            rgba(10, 12, 16, 0.99) 15%,
+            rgba(10, 12, 16, 0.7) 50%,
+            rgba(10, 12, 16, 0.99) 85%);
+    z-index: -1;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px auto 8%;
+    padding: 15px 25px;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* ===============================
+   BOTÕES
+================================ */
+
+button {
+    background: linear-gradient(135deg, var(--neon), #3573c9);
+    color: #000;
+    width: 150px;
+    height: 34px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.4);
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 245, 255, 0.7);
+}
+
+/* ===============================
+   TOPO
+================================ */
+
+.topo {
+    position: fixed;
+    width: 90px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* ===============================
+   SEÇÃO PERFIL
+================================ */
+
+/* CONTAINER DA FOTO */
+.div-pessoal {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+
+/* ANEL DE LUZ (NEON) */
+.div-pessoal::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+
+    border-radius: 50%;
+    border: 1px solid #00f5ff;
+
+    box-shadow:
+        0 0 15px rgba(0, 245, 255, 0.6),
+        0 0 35px rgba(0, 245, 255, 0.4),
+        0 0 60px rgba(0, 245, 255, 0.2);
+
+    animation: glowPulse 3s infinite ease-in-out;
+}
+
+/* FOTO */
+.foto-perfil {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+/* HOVER */
+.div-pessoal:hover .foto-perfil {
+    transform: scale(1.08);
+    transform-origin: center;
+}
+
+/* ANIMAÇÃO DO NEON */
+@keyframes glowPulse {
+    0% {
+        box-shadow:
+            0 0 15px rgba(0, 245, 255, 0.5),
+            0 0 35px rgba(0, 245, 255, 0.3),
+            0 0 60px rgba(0, 245, 255, 0.2);
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px rgba(0, 245, 255, 0.8),
+            0 0 55px rgba(0, 245, 255, 0.6),
+            0 0 90px rgba(0, 245, 255, 0.4);
+    }
+
+    100% {
+        box-shadow:
+            0 0 15px rgba(0, 245, 255, 0.5),
+            0 0 35px rgba(0, 245, 255, 0.3),
+            0 0 60px rgba(0, 245, 255, 0.2);
+    }
+}
+
+.nome-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 40px;
+    animation: fadeUp 0.8s ease both;
+}
+
+/* ===============================
+   SOBRE MIM
+================================ */
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 17%;
+    gap: 40px;
+    margin: 20% 0;
+    animation: fadeUp 0.8s ease both;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ===============================
+   PROJETOS (CARDS)
+================================ */
+
+.projeto1,
+.projeto2,
+.projeto3,
+.projeto4,
+.projeto5,
+.projeto6,
+.projeto7,
+.projeto8,
+.projeto9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 17%;
+    margin-bottom: 80px;
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+    animation: fadeUp 0.8s ease both;
+}
+
+.projeto9 {
+    margin-bottom: 15%;
+}
+
+/* ===============================
+   IMAGENS DOS PROJETOS
+================================ */
+
+.img-fenerbahtchê,
+.img-projeto2,
+.img-jokenpo,
+.cronometro,
+.calculadora,
+.sorteio,
+.mario,
+.landing {
+    width: 400px;
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.img-fenerbahtchê:hover,
+.img-projeto2:hover,
+.img-jokenpo:hover,
+.cronometro:hover,
+.calculadora:hover,
+.sorteio:hover,
+.mario:hover,
+.landing:hover {
+    transform: scale(1.12) rotate(0.5deg);
+}
+
+/* ===============================
+   HABILIDADES
+================================ */
+
+.titulo2,
+.titulo3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    animation: fadeUp 0.8s ease both
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.html,
+.css,
+.js,
+.node {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.html:hover,
+.css:hover,
+.js:hover,
+.node:hover {
+    transform: scale(1.1);
+}
+
+.titulo2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.html {
+    width: 150px;
+    height: 190px;
+}
+
+.css {
+    width: 300px;
+    height: 210px;
+}
+
+.js {
+    width: 130px;
+    height: 200px;
+}
+
+.node {
+    margin-top: 20px;
+    width: 150px;
+    height: 190px;
+    margin-bottom: 15%;
+}
+
+/* ===============================
+   CERTIFICADOS
+================================ */
+
+.certificados img {
+    width: 500px;
+    margin: 50px auto;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.certificados img:hover {
+    transform: scale(1.05);
+}
+
+.certificados {
+    margin-bottom: 20%;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+    padding: 30px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links div {
+    margin: 0 10px;
+}
+
+
+/* ===============================
+   ANIMAÇÕES
+================================ */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 1100px) {
+    .img-fenerbahtchê {
+        width: 300px;
+    }
+
+    .img-jokenpo {
+        width: 300px;
+    }
+
+    .calculadora {
+        width: 300px;
+    }
+
+    .cronometro {
+        width: 300px;
+    }
+
+    .img-jokenpo {
+        width: 300px;
+    }
+
+    .img-projeto2 {
+        width: 300px;
+    }
+
+    .mario {
+        width: 300px;
+    }
+
+    .sorteio {
+        width: 300px;
+    }
+
+    .landing {
+        width: 300px;
+    }
+
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 641px) {
+    .contact-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .certificados img {
+        width: 300px;
+    }
+
+    .certificados img:hover {
+        width: 300px;
+    }
+
+    button {
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .titulo2,
+    .titulo3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .habilidades {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .html {
+        width: 100px;
+        height: 140px;
+    }
+
+    .css {
+        width: 230px;
+        height: 110px;
+    }
+
+    .js {
+        width: 80px;
+        height: 150px;
+    }
+
+    .node {
+        margin-top: 20px;
+        width: 100px;
+        height: 140px;
+        margin-bottom: 15%;
+    }
+
+
+    .topo {
+        position: fixed;
+        width: 70px;
+        bottom: 20px;
+        right: 0px;
+    }
+
+    .img-fenerbahtchê,
+    .img-projeto2,
+    .img-jokenpo,
+    .cronometro,
+    .calculadora,
+    .sorteio,
+    .mario,
+    .landing {
+        width: 220px;
+    }
+
+    .certificados img {
+        width: 240px;
+    }
+
+    .div-pessoal {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+    }
+
+
+    /* ANEL DE LUZ (NEON) */
+    .div-pessoal::before {
+        content: "";
+        position: absolute;
+        inset: -8px;
+
+        border-radius: 50%;
+        border: 1px solid #00f5ff;
+
+        box-shadow:
+            0 0 15px rgba(0, 245, 255, 0.6),
+            0 0 35px rgba(0, 245, 255, 0.4),
+            0 0 60px rgba(0, 245, 255, 0.2);
+
+        animation: glowPulse 3s infinite ease-in-out;
+    }
+
+    /* FOTO */
+    .foto-perfil {
+        width: 95%;
+        height: 95%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.4s ease;
+    }
+
+    /* HOVER */
+    .div-pessoal:hover .foto-perfil {
+        transform: scale(1.08);
+        transform-origin: center;
+    }
+
+    /* ANIMAÇÃO DO NEON */
+    @keyframes glowPulse {
+        0% {
+            box-shadow:
+                0 0 15px rgba(0, 245, 255, 0.5),
+                0 0 35px rgba(0, 245, 255, 0.3),
+                0 0 60px rgba(0, 245, 255, 0.2);
+        }
+
+        50% {
+            box-shadow:
+                0 0 25px rgba(0, 245, 255, 0.8),
+                0 0 55px rgba(0, 245, 255, 0.6),
+                0 0 90px rgba(0, 245, 255, 0.4);
+        }
+
+        100% {
+            box-shadow:
+                0 0 15px rgba(0, 245, 255, 0.5),
+                0 0 35px rgba(0, 245, 255, 0.3),
+                0 0 60px rgba(0, 245, 255, 0.2);
+        }
+    }
+
+    .nome-titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 40px;
+        animation: fadeUp 0.8s ease both;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 30px auto 20%;
+        padding: 15px 25px;
+        background: var(--glass);
+        backdrop-filter: blur(12px);
+        border-radius: 25px;
+        box-shadow: var(--shadow-soft);
+        font-size: 14px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 15px 10px;
+        gap: 13px;
+        border-radius: 20px;
+    }
+
+    .button-projetos,
+    #btnCurriculo,
+    .button-sobre-mim,
+    .button-habilidades,
+    .button-certificados,
+    .contact {
+        flex: 1 1 30%;
+        min-width: 110px;
+        font-size: 12px;
+    }
+
+    .nome-titulo h1 {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
