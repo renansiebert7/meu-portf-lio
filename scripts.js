@@ -20,7 +20,7 @@ document.querySelector(".contact").addEventListener("click", function () {
 
 document.getElementById("btnCurriculo").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "assets/Meu Currículo.pdf"
+    link.href = "assets/Currículo Renan Carlo Siebert.pdf"
     link.download = "Curriculo-Renan.pdf";
     link.click();
 });
