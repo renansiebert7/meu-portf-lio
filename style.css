@@ -156,7 +156,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 230px 10%;
+    padding: 120px 8% 60px;
     min-height: 100vh;
     background: radial-gradient(circle at top left, #2b0000, var(--bg-hero));
     color: white;
@@ -253,7 +253,7 @@ nav {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 80px;
 }
 
 .sobre-mim p {
@@ -530,6 +530,11 @@ footer h3 {
         margin: 5% 0 30% 0;
     }
 
+    .sobre-mim h2, .sobre-mim h4 {
+        justify-content: center; 
+        text-align: center;
+    }
+
     .sobre-mim img {
         display: none;
     }
@@ -540,13 +545,26 @@ footer h3 {
 
     .hero {
         flex-direction: column-reverse;
-        padding: 40px;
+        padding: 100px 5% 40px;
         text-align: center;
     }
 
     .hero img {
+        width: 200px;
         margin-top: 10%;
         margin-bottom: 15%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        margin-top: 0;
+    }
+
+    .certificados img {
+        max-width: 90%;
     }
 }
 
