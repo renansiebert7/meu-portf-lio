@@ -569,6 +569,33 @@ footer h3 {
 }
 
 @media (max-width: 828px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column-reverse; 
+        padding: 80px 5% 40px;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 28px; 
+        line-height: 1.1;
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 180px; 
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        margin-top: 0;
+        font-size: 12px;
+    }
 
     nav {
         display: none;
