@@ -3,11 +3,11 @@ document.querySelector(".button-sobre-mim").addEventListener("click", function (
 });
 
 document.querySelector(".button-projetos").addEventListener("click", function () {
-    document.querySelector(".projeto1").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".title-projects").scrollIntoView({ behavior: "smooth" });
 });
 
 document.querySelector(".button-habilidades").addEventListener("click", function () {
-    document.querySelector(".titulo2").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".skills").scrollIntoView({ behavior: "smooth" });
 });
 
 document.querySelector(".button-certificados").addEventListener("click", function () {
@@ -16,6 +16,10 @@ document.querySelector(".button-certificados").addEventListener("click", functio
 
 document.querySelector(".contact").addEventListener("click", function () {
     document.querySelector("footer").scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".projeto").addEventListener("click", function () {
+    document.querySelector(".title-projects").scrollIntoView({ behavior: "smooth" });
 });
 
 document.getElementById("btnCurriculo").addEventListener("click", function () {
