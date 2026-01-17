@@ -149,6 +149,15 @@ nav {
     z-index: 2;
 }
 
+.topo:hover{
+    width: 95px;
+}
+
+.topo:active{
+    width: 85px;
+    opacity: 0.8;
+}
+
 /* ===============================
    SEÇÃO PERFIL
 ================================ */
@@ -157,9 +166,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 120px 8% 60px;
-    min-height: 100vh;
+    min-height: 80vh;
     background: radial-gradient(circle at top left, #2b0000, var(--bg-hero));
     color: white;
+    gap: 40px;
 }
 
 .hero .projeto {
@@ -216,7 +226,6 @@ nav {
     color: var(--primary-red);
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: 15%;
 }
 
 .hero-text h1 {
@@ -242,6 +251,11 @@ nav {
     width: 320px;
     border-radius: 50% 50% 45% 55% / 55% 45% 55% 45%;
     border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.4);
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
 }
 
 /* ===============================
@@ -285,9 +299,9 @@ nav {
 }
 
 .sobre-mim img {
-    width: 500px;
-    height: 500px;
-    margin-top: 20%;
+    width: 400px;
+    height: auto;
+    margin-top: 60px;
 }
 
 .sobre-mim {
@@ -295,9 +309,9 @@ nav {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    padding: 0 8%;
+    padding: 40px;
     gap: 40px;
-    margin: 0 0 20% 0;
+    margin: 80px;
     animation: fadeUp 0.8s ease both;
 }
 
@@ -307,7 +321,7 @@ nav {
 
 .title-projects {
     max-width: 1200px;
-    margin: 0 auto 60px;
+    margin: 20px auto 60px;
     padding: 0 20px;
     display: flex;
     align-items: center;
@@ -448,7 +462,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 10vh;
 }
 
@@ -526,31 +540,22 @@ footer h3 {
 
     .sobre-mim {
         flex-direction: column;
-        padding: 0 10%;
+        padding: 60px;
         margin: 5% 0 30% 0;
-    }
-
-    .sobre-mim h2, .sobre-mim h4 {
-        justify-content: center; 
-        text-align: center;
+        gap: 0;
     }
 
     .sobre-mim img {
         display: none;
     }
 
-    .sobre-mim p {
-        margin: 0;
-    }
-
     .hero {
         flex-direction: column-reverse;
-        padding: 100px 5% 40px;
+        padding: 100px 10px 40px;
         text-align: center;
     }
 
     .hero img {
-        width: 200px;
         margin-top: 10%;
         margin-bottom: 15%;
     }
@@ -564,7 +569,11 @@ footer h3 {
     }
 
     .certificados img {
-        max-width: 90%;
+        max-width: 400px;
+    }
+
+    .topo {
+        width: 45px;
     }
 }
 
@@ -576,7 +585,7 @@ footer h3 {
 
     .hero {
         flex-direction: column-reverse; 
-        padding: 80px 5% 40px;
+        padding: 180px 40px;
         text-align: center;
         gap: 20px;
     }
@@ -588,7 +597,7 @@ footer h3 {
     }
 
     .hero-image img {
-        width: 180px; 
+        width: 250px;
         margin-bottom: 20px;
     }
 
@@ -657,6 +666,4 @@ footer h3 {
     .hero img {
         width: 250px;
     }
-
-
 }
