@@ -24,7 +24,7 @@ Abaixo, as principais ferramentas que domino e utilizo nos meus projetos:
 | 📱 **Landing Page iOne X** | Página de vendas de smartphone com foco em conversão. | ✅ Finalizado |
 | ✅ **To Do List Futurista** | Gerenciador de tarefas com manipulação de DOM. | ✅ Finalizado |
 | 🔢 **Sorteador & Calculadora** | Ferramentas de utilidade com lógica matemática. | ✅ Finalizado |
-| 🎮 **Jokenpô & Mario** | Projetos interativos e lúdicos com temas de games. | ✅ Finalizado |
+| 🎮 **Jokenpô & Super Mario** | Projetos interativos e lúdicos com temas de games. | ✅ Finalizado |
 | 💰 **Conversor & Cronômetro**| Aplicações práticas para o dia a dia. | ✅ Finalizado |
 
 ---
