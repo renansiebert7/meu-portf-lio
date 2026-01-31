@@ -32,7 +32,7 @@ Abaixo, as principais ferramentas que domino e utilizo nos meus projetos:
 ## 🌐 Demonstração Online
 O portfólio está publicado e pode ser acessado em tempo real:
 
-> [**👉 Clique aqui para visualizar o portfólio completo**](https://renansiebert7.github.io/meu-portf-lio/)
+> [**👉 Clique aqui para visualizar o portfólio completo**](https://renansiebert7.github.io/portfolio/)
 
 ---
 
