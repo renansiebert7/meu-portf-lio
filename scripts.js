@@ -2,6 +2,10 @@ document.querySelector(".button-sobre-mim").addEventListener("click", function (
     document.querySelector(".sobre-mim").scrollIntoView({ behavior: "smooth" });
 });
 
+document.querySelector(".button-inicio").addEventListener("click", function () {
+    document.querySelector(".hero").scrollIntoView({ behavior: "smooth" });
+});
+
 document.querySelector(".button-projetos").addEventListener("click", function () {
     document.querySelector(".title-projects").scrollIntoView({ behavior: "smooth" });
 });
